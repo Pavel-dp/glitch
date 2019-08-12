@@ -1,0 +1,18 @@
+extends layout
+
+block content
+    .nadya
+        img(src="images/nadya.png", alt="Manager", id='nadya', class="img-circle")
+    p Оставьте свои данные и наш менеджер обязательно свяжется с Вами!        
+    form(method="post")
+        fieldset.form-group
+            label(for="name") Имя:
+            input.form-control(name='name', id='name', type="text", placeholder="Введите Ваше имя")
+            br
+            label(for="phone") Телефон:
+            input.form-control(name='phone', id='phone', type="text", placeholder="Введите Ваш телефон")
+            br
+            label(for="email") E-mail:
+            input.form-control(name='email', id='email', type="email", placeholder="Введите Ваш email")           
+        button.btn.btn-success(type="submit") Свяжитесь со мной!
+        a.btn.btn-danger(href="/contact") Отмена
